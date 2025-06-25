@@ -92,8 +92,7 @@
         <a href="/portfolio" class="text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 underline transition-colors font-medium">
           portfolio here
         </a>. 
-        I love how collaboration and knowledge sharing happens through open-source and I am happy 
-        to see what I do could eventually feedback to the community and industry.
+        I love how collaboration and knowledge sharing happens through open-source and I am happy to see what I do could eventually feedback to the community and industry.
       </p>
       
       <p class="text-[14px] lg:text-base text-gray-600 dark:text-gray-400 leading-loose font-normal">

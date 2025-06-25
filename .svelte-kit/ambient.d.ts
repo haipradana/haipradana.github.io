@@ -26,7 +26,6 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const GJS_DEBUG_TOPICS: string;
 	export const LESSOPEN: string;
 	export const USER: string;
 	export const LC_TIME: string;
@@ -46,7 +45,6 @@ declare module '$env/static/private' {
 	export const npm_package_json: string;
 	export const NVM_INC: string;
 	export const PERLLIB: string;
-	export const GIO_LAUNCHED_DESKTOP_FILE: string;
 	export const ROS_PYTHON_VERSION: string;
 	export const GNOME_SHELL_SESSION_MODE: string;
 	export const GRADLE_HOME: string;
@@ -54,14 +52,13 @@ declare module '$env/static/private' {
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const LC_MONETARY: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
-	export const MANAGERPID: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
+	export const DBUS_STARTER_BUS_TYPE: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const IM_CONFIG_CHECK_ENV: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const COLORTERM: string;
-	export const GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 	export const COLOR: string;
 	export const NVM_DIR: string;
 	export const IM_CONFIG_PHASE: string;
@@ -71,7 +68,6 @@ declare module '$env/static/private' {
 	export const LOGNAME: string;
 	export const OWD: string;
 	export const SDKMAN_CANDIDATES_API: string;
-	export const JOURNAL_STREAM: string;
 	export const _: string;
 	export const npm_config_prefix: string;
 	export const npm_config_npm_version: string;
@@ -86,12 +82,12 @@ declare module '$env/static/private' {
 	export const PATH: string;
 	export const SESSION_MANAGER: string;
 	export const SDKMAN_CANDIDATES_DIR: string;
-	export const INVOCATION_ID: string;
 	export const APPIMAGE: string;
 	export const NODE: string;
 	export const npm_package_name: string;
 	export const XDG_MENU_PREFIX: string;
 	export const LC_ADDRESS: string;
+	export const GNOME_TERMINAL_SCREEN: string;
 	export const GNOME_SETUP_DISPLAY: string;
 	export const XDG_RUNTIME_DIR: string;
 	export const GDK_BACKEND: string;
@@ -104,6 +100,7 @@ declare module '$env/static/private' {
 	export const XAUTHORITY: string;
 	export const LS_COLORS: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
+	export const GNOME_TERMINAL_SERVICE: string;
 	export const SDKMAN_DIR: string;
 	export const SDKMAN_PLATFORM: string;
 	export const TERM_PROGRAM: string;
@@ -124,7 +121,6 @@ declare module '$env/static/private' {
 	export const LESSCLOSE: string;
 	export const KOTLIN_HOME: string;
 	export const LC_MEASUREMENT: string;
-	export const GJS_DEBUG_OUTPUT: string;
 	export const LC_IDENTIFICATION: string;
 	export const Qt6_DIR: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
@@ -137,6 +133,7 @@ declare module '$env/static/private' {
 	export const npm_execpath: string;
 	export const XDG_CONFIG_DIRS: string;
 	export const NVM_CD_FLAGS: string;
+	export const DBUS_STARTER_ADDRESS: string;
 	export const XDG_DATA_DIRS: string;
 	export const npm_config_global_prefix: string;
 	export const PYTHONPATH: string;
@@ -144,6 +141,7 @@ declare module '$env/static/private' {
 	export const npm_command: string;
 	export const LC_PAPER: string;
 	export const QT_PLUGIN_PATH: string;
+	export const VTE_VERSION: string;
 	export const CMAKE_PREFIX_PATH: string;
 	export const INIT_CWD: string;
 	export const EDITOR: string;
@@ -179,7 +177,6 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		GJS_DEBUG_TOPICS: string;
 		LESSOPEN: string;
 		USER: string;
 		LC_TIME: string;
@@ -199,7 +196,6 @@ declare module '$env/dynamic/private' {
 		npm_package_json: string;
 		NVM_INC: string;
 		PERLLIB: string;
-		GIO_LAUNCHED_DESKTOP_FILE: string;
 		ROS_PYTHON_VERSION: string;
 		GNOME_SHELL_SESSION_MODE: string;
 		GRADLE_HOME: string;
@@ -207,14 +203,13 @@ declare module '$env/dynamic/private' {
 		VSCODE_GIT_ASKPASS_MAIN: string;
 		LC_MONETARY: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
-		MANAGERPID: string;
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
+		DBUS_STARTER_BUS_TYPE: string;
 		SYSTEMD_EXEC_PID: string;
 		IM_CONFIG_CHECK_ENV: string;
 		DBUS_SESSION_BUS_ADDRESS: string;
 		COLORTERM: string;
-		GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 		COLOR: string;
 		NVM_DIR: string;
 		IM_CONFIG_PHASE: string;
@@ -224,7 +219,6 @@ declare module '$env/dynamic/private' {
 		LOGNAME: string;
 		OWD: string;
 		SDKMAN_CANDIDATES_API: string;
-		JOURNAL_STREAM: string;
 		_: string;
 		npm_config_prefix: string;
 		npm_config_npm_version: string;
@@ -239,12 +233,12 @@ declare module '$env/dynamic/private' {
 		PATH: string;
 		SESSION_MANAGER: string;
 		SDKMAN_CANDIDATES_DIR: string;
-		INVOCATION_ID: string;
 		APPIMAGE: string;
 		NODE: string;
 		npm_package_name: string;
 		XDG_MENU_PREFIX: string;
 		LC_ADDRESS: string;
+		GNOME_TERMINAL_SCREEN: string;
 		GNOME_SETUP_DISPLAY: string;
 		XDG_RUNTIME_DIR: string;
 		GDK_BACKEND: string;
@@ -257,6 +251,7 @@ declare module '$env/dynamic/private' {
 		XAUTHORITY: string;
 		LS_COLORS: string;
 		VSCODE_GIT_IPC_HANDLE: string;
+		GNOME_TERMINAL_SERVICE: string;
 		SDKMAN_DIR: string;
 		SDKMAN_PLATFORM: string;
 		TERM_PROGRAM: string;
@@ -277,7 +272,6 @@ declare module '$env/dynamic/private' {
 		LESSCLOSE: string;
 		KOTLIN_HOME: string;
 		LC_MEASUREMENT: string;
-		GJS_DEBUG_OUTPUT: string;
 		LC_IDENTIFICATION: string;
 		Qt6_DIR: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
@@ -290,6 +284,7 @@ declare module '$env/dynamic/private' {
 		npm_execpath: string;
 		XDG_CONFIG_DIRS: string;
 		NVM_CD_FLAGS: string;
+		DBUS_STARTER_ADDRESS: string;
 		XDG_DATA_DIRS: string;
 		npm_config_global_prefix: string;
 		PYTHONPATH: string;
@@ -297,6 +292,7 @@ declare module '$env/dynamic/private' {
 		npm_command: string;
 		LC_PAPER: string;
 		QT_PLUGIN_PATH: string;
+		VTE_VERSION: string;
 		CMAKE_PREFIX_PATH: string;
 		INIT_CWD: string;
 		EDITOR: string;
