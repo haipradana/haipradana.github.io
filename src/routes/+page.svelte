@@ -101,15 +101,19 @@
     </div>
     
     <div class="text-center mt-12 lg:mt-16">
-      <p class="text-[14px] lg:text-base text-gray-600 dark:text-gray-400 mb-4 lg:mb-6">
-        Let's keep in touch! Drop me a message at pradanayahyaabdillah@mail.ugm.ac.id
+      <p class="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-400 mb-4 lg:mb-6 px-4">
+        Let's keep in touch! Drop me a message at 
+        <br class="sm:hidden" />
+        <a href="mailto:pradanayahyaabdillah@mail.ugm.ac.id" class="text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 underline transition-colors font-medium break-all sm:break-normal">
+          pradanayahyaabdillah@mail.ugm.ac.id
+        </a>
       </p>
       <a 
         href="mailto:pradanayahyaabdillah@mail.ugm.ac.id" 
-        class="inline-flex items-center px-6 py-3 lg:px-8 lg:py-4 bg-gray-800 hover:bg-gray-700 dark:bg-gray-200 dark:hover:bg-gray-100 text-white dark:text-gray-900 font-medium rounded-lg lg:rounded-xl transition-all duration-200 hover:scale-105 transform text-base lg:text-base"
+        class="inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4 bg-gray-800 hover:bg-gray-700 dark:bg-gray-200 dark:hover:bg-gray-100 text-white dark:text-gray-900 font-medium rounded-lg lg:rounded-xl transition-all duration-200 hover:scale-105 transform text-sm sm:text-base"
       >
-        <Mail class="w-3 h-3 lg:w-4 lg:h-4 mr-2 lg:mr-2" />
-        Get in Touch
+        <Mail class="w-3 h-3 sm:w-4 sm:h-4 lg:w-4 lg:h-4 mr-1 sm:mr-2 lg:mr-2" />
+        <span class="text-xs sm:text-sm lg:text-base">Get in Touch</span>
       </a>
     </div>
   </section>

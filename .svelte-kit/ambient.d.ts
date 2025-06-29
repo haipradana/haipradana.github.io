@@ -39,6 +39,7 @@ declare module '$env/static/private' {
 	export const HOME: string;
 	export const CHROME_DESKTOP: string;
 	export const APPDIR: string;
+	export const DISABLE_AUTO_UPDATE: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const DESKTOP_SESSION: string;
 	export const NVM_BIN: string;
@@ -49,6 +50,7 @@ declare module '$env/static/private' {
 	export const GNOME_SHELL_SESSION_MODE: string;
 	export const GRADLE_HOME: string;
 	export const GTK_MODULES: string;
+	export const PAGER: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const LC_MONETARY: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
@@ -145,7 +147,6 @@ declare module '$env/static/private' {
 	export const CMAKE_PREFIX_PATH: string;
 	export const INIT_CWD: string;
 	export const EDITOR: string;
-	export const NODE_ENV: string;
 }
 
 /**
@@ -190,6 +191,7 @@ declare module '$env/dynamic/private' {
 		HOME: string;
 		CHROME_DESKTOP: string;
 		APPDIR: string;
+		DISABLE_AUTO_UPDATE: string;
 		TERM_PROGRAM_VERSION: string;
 		DESKTOP_SESSION: string;
 		NVM_BIN: string;
@@ -200,6 +202,7 @@ declare module '$env/dynamic/private' {
 		GNOME_SHELL_SESSION_MODE: string;
 		GRADLE_HOME: string;
 		GTK_MODULES: string;
+		PAGER: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
 		LC_MONETARY: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
@@ -296,7 +299,6 @@ declare module '$env/dynamic/private' {
 		CMAKE_PREFIX_PATH: string;
 		INIT_CWD: string;
 		EDITOR: string;
-		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}

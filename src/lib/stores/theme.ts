@@ -3,66 +3,59 @@ import { browser } from '$app/environment';
 
 type Theme = 'light' | 'dark';
 
-function createThemeStore() {
+// Create a writable store with 'light' as the default
+const createThemeStore = () => {
   const { subscribe, set, update } = writable<Theme>('light');
 
   return {
     subscribe,
-    toggle: () => {
-      if (browser) {
-        update(currentTheme => {
-          const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-          
-          // Clear any existing theme classes first
-          document.documentElement.classList.remove('dark', 'light');
-          
-          if (newTheme === 'dark') {
-            document.documentElement.classList.add('dark');
-          } else {
-            document.documentElement.classList.add('light');
-          }
-          
-          localStorage.setItem('theme', newTheme);
-          return newTheme;
-        });
-      }
-    },
+    // Initialize theme from localStorage or default to light
     init: () => {
       if (browser) {
-        // Clear any existing classes first
-        document.documentElement.classList.remove('dark', 'light');
-        
-        // Check for saved theme preference or prefer-color-scheme
-        const savedTheme = localStorage.getItem('theme') as Theme | null;
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-        
-        if (theme === 'dark') {
-          document.documentElement.classList.add('dark');
+        const stored = localStorage.getItem('theme') as Theme;
+        if (stored === 'dark' || stored === 'light') {
+          set(stored);
+          updateHtmlClass(stored);
         } else {
-          document.documentElement.classList.add('light');
+          // Default to light mode
+          set('light');
+          updateHtmlClass('light');
+          localStorage.setItem('theme', 'light');
         }
-        
-        set(theme);
-        localStorage.setItem('theme', theme);
       }
     },
-    setTheme: (theme: Theme) => {
-      if (browser) {
-        // Clear any existing theme classes first
-        document.documentElement.classList.remove('dark', 'light');
-        
-        if (theme === 'dark') {
-          document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.add('light');
+    // Toggle between light and dark
+    toggle: () => {
+      update(currentTheme => {
+        const newTheme: Theme = currentTheme === 'light' ? 'dark' : 'light';
+        if (browser) {
+          localStorage.setItem('theme', newTheme);
+          updateHtmlClass(newTheme);
         }
-        
+        return newTheme;
+      });
+    },
+    // Set specific theme
+    setTheme: (theme: Theme) => {
+      set(theme);
+      if (browser) {
         localStorage.setItem('theme', theme);
-        set(theme);
+        updateHtmlClass(theme);
       }
     }
   };
-}
+};
+
+// Helper function to update HTML class
+const updateHtmlClass = (theme: Theme) => {
+  if (browser) {
+    const html = document.documentElement;
+    if (theme === 'dark') {
+      html.classList.add('dark');
+    } else {
+      html.classList.remove('dark');
+    }
+  }
+};
 
 export const theme = createThemeStore();
