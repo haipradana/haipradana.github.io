@@ -101,7 +101,7 @@
     </div>
     
     <div class="text-center mt-12 lg:mt-16">
-      <p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 mb-4 lg:mb-6 px-4">
+      <p class="text-sm lg:text-base text-gray-600 dark:text-gray-400 mb-4 lg:mb-6 px-4">
         Let's keep in touch! Drop me a message at 
         <br class="sm:hidden" />
         <a href="mailto:pradanayahyaabdillah@mail.ugm.ac.id" class="text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 underline transition-colors font-medium break-all sm:break-normal">
