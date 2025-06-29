@@ -26,34 +26,34 @@
 
 <div class="max-w-6xl mx-auto px-4 py-12">
   <!-- Header -->
-  <section class="text-center mb-12">
+  <section class="text-center mb-6">
     <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">
       Portfolio
     </h1>
-    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+    <!-- <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
       A collection of projects showcasing my skills
-    </p>
+    </p> -->
   </section>
 
   <!-- Filter Section -->
   <section class="mb-12">
     <div class="flex items-center justify-center mb-6">
-      <Filter class="w-5 h-5 text-gray-500 dark:text-gray-500 mr-2" />
-      <span class="text-gray-600 dark:text-gray-400 font-medium">Filter by category:</span>
+      <Filter class="w-4 h-4 text-gray-500 dark:text-gray-500 mr-2" />
+      <span class="text-gray-600 dark:text-gray-400 font-medium text-xs">Filter by category:</span>
     </div>
     
-    <div class="flex flex-wrap justify-center gap-3">
+    <div class="flex flex-wrap justify-center gap-2 sm:gap-3">
       {#each categories as category}
         <button
           on:click={() => selectCategory(category.id)}
-          class="px-4 py-2 rounded-full font-medium transition-all duration-200 border
+          class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full font-medium transition-all duration-200 border text-xs sm:text-sm
                  {selectedCategory === category.id
                    ? 'bg-gray-800 text-white dark:bg-gray-200 dark:text-gray-900 border-gray-800 dark:border-gray-200 shadow-lg'
                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700'
                  }"
         >
           {category.label}
-          <span class="ml-2 px-2 py-0.5 text-xs rounded-full
+          <span class="ml-1.5 sm:ml-2 px-1.5 py-0.5 sm:px-2 text-xs rounded-full
                        {selectedCategory === category.id
                          ? 'bg-white/20 text-white dark:bg-gray-900/20 dark:text-gray-900'
                          : 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400'

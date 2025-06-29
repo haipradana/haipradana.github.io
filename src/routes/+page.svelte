@@ -74,7 +74,7 @@
 
   <!-- About Section -->
   <section class="px-4 lg:px-16 max-w-3xl lg:max-w-4xl mx-auto ">
-    <h1 class="text-l sm:text-1xl lg:text-2xl xl:text-3xl font-bold text-center text-gray-900 dark:text-gray-100 mb-8 lg:mb-12 leading-tight">
+    <h1 class="lg:text-2xl xl:text-3xl font-bold text-center text-gray-900 dark:text-gray-100 mb-8 lg:mb-12 leading-tight">
       Hi, Dana here!
     </h1>
     
@@ -95,13 +95,13 @@
         I love how collaboration and knowledge sharing happens through open-source and I am happy to see what I do could eventually feedback to the community and industry.
       </p>
       
-      <p class="text-[14px] lg:text-base text-gray-600 dark:text-gray-400 leading-loose font-normal">
+      <p class="text-[15px] lg:text-base text-gray-600 dark:text-gray-400 leading-loose font-normal">
         Outside of programming, I find joy in hiking and playing football. They help me refresh my mind and give me the energy boost that I need to come back with new ideas and motivation.
       </p>
     </div>
     
     <div class="text-center mt-12 lg:mt-16">
-      <p class="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-400 mb-4 lg:mb-6 px-4">
+      <p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 mb-4 lg:mb-6 px-4">
         Let's keep in touch! Drop me a message at 
         <br class="sm:hidden" />
         <a href="mailto:pradanayahyaabdillah@mail.ugm.ac.id" class="text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 underline transition-colors font-medium break-all sm:break-normal">

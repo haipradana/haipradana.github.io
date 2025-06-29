@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Mail, User, Github } from 'lucide-svelte';
+  import { Mail, Linkedin, Github, Instagram } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -39,7 +39,7 @@
         class="flex items-center space-x-2 sm:space-x-3 text-sm sm:text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-500 transition-colors group"
       >
         <div class="p-1.5 sm:p-2 bg-blue-100 dark:bg-blue-900/20 rounded-lg group-hover:bg-blue-200 dark:group-hover:bg-blue-900/30 transition-colors">
-          <User class="w-4 h-4 sm:w-5 sm:h-5 text-blue-700 dark:text-blue-500" />
+          <Linkedin class="w-4 h-4 sm:w-5 sm:h-5 text-blue-700 dark:text-blue-500" />
         </div>
         <span class="underline">Pradana Yahya Abdillah</span>
       </a>
@@ -74,6 +74,21 @@
           </svg>
         </div>
         <span class="underline">haipradana</span>
+      </a>
+    </div>
+
+    <!-- Instagram-->
+    <div class="flex items-center justify-start">
+      <a
+        href="https://instagram.com/pradanaabdillah"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center space-x-2 sm:space-x-3 text-sm sm:text-lg text-gray-700 dark:text-gray-300 hover:text-pink-500 dark:hover:text-pink-400 transition-colors group"
+      >
+        <div class="p-1.5 sm:p-2 bg-gradient-to-br from-pink-100 to-purple-100 dark:from-pink-900/20 dark:to-purple-900/20 rounded-lg group-hover:from-pink-200 group-hover:to-purple-200 dark:group-hover:from-pink-900/30 dark:group-hover:to-purple-900/30 transition-colors">
+          <Instagram class="w-4 h-4 sm:w-5 sm:h-5 text-pink-600 dark:text-pink-400" />
+        </div>
+        <span class="underline">pradanaabdillah</span>
       </a>
     </div>
   </section>
