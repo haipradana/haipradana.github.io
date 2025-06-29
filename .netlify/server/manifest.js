@@ -10,7 +10,7 @@ return {
 	assets: new Set(["images/profile.webp","projects/ai-chat-assistant.md","projects/data-analytics-dashboard.md","projects/ecommerce-platform.md","projects/face-recognition-attendance.md","projects/mobile-task-manager.md","projects/object-detection-system.md"]),
 	mimeTypes: {".webp":"image/webp",".md":"text/markdown"},
 	_: {
-		client: {start:"_app/immutable/entry/start.CjqxEFVR.js",app:"_app/immutable/entry/app.DFJ0vOyw.js",imports:["_app/immutable/entry/start.CjqxEFVR.js","_app/immutable/chunks/IuyRtt9T.js","_app/immutable/chunks/y1xvqwpx.js","_app/immutable/entry/app.DFJ0vOyw.js","_app/immutable/chunks/y1xvqwpx.js","_app/immutable/chunks/CM9EVAoq.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.CBx8kHhl.js",app:"_app/immutable/entry/app.G4eB5uX-.js",imports:["_app/immutable/entry/start.CBx8kHhl.js","_app/immutable/chunks/0H0GRZLN.js","_app/immutable/chunks/y1xvqwpx.js","_app/immutable/entry/app.G4eB5uX-.js","_app/immutable/chunks/y1xvqwpx.js","_app/immutable/chunks/CM9EVAoq.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
