@@ -25,9 +25,13 @@
   <div class="max-w-3xl lg:max-w-4xl mx-auto px-6 lg:px-8">
           <div class="flex items-center justify-between h-12 lg:h-14">
       <!-- Logo -->
-              <a href="/" class="font-bold text-lg lg:text-xl text-gray-900 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
-        Pradana
-      </a>
+      <a href="/" class="py-3 sm:py-4 lg:py-5">
+        {#if $theme === 'dark'}
+          <img src="/images/logodana-dark.png" alt="Pradana Logo" class="h-1 sm:h-2 lg:h-3 w-auto" />
+        {:else}
+          <img src="/images/logodana-light.png" alt="Pradana Logo" class="h-1 sm:h-2 lg:h-3 w-auto" />
+        {/if}
+      </a>      
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center space-x-8 lg:space-x-10 xl:space-x-12">
