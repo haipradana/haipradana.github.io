@@ -117,25 +117,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<link rel="preconnect" href="https://fonts.googleapis.com">\n		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		<meta name="google-site-verification" content="PDEQ8nFxaq-SmQ6UMeerxPE96c5-5eKz5H095dmqS3A" />\n		' + head + `
-		<script>
-			// Prevent FOUC (Flash of Unstyled Content) by setting theme before page loads
-			try {
-				const theme = localStorage.getItem('theme');
-				if (theme === 'dark') {
-					document.documentElement.classList.add('dark');
-				} else {
-					// Default to light mode, remove dark class if it exists
-					document.documentElement.classList.remove('dark');
-				}
-			} catch (e) {
-				// If localStorage is not available, default to light mode
-				document.documentElement.classList.remove('dark');
-			}
-		<\/script>
-	</head>
-	<body data-sveltekit-preload-data="hover" class="min-h-screen bg-white dark:bg-dark-custom text-gray-900 dark:text-gray-50 transition-colors duration-300">
-		<div style="display: contents">` + body + "</div>\n	</body>\n</html>",
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />\n    <link rel="preconnect" href="https://fonts.googleapis.com" />\n    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n    <link\n      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"\n      rel="stylesheet"\n    />\n    <meta name="viewport" content="width=device-width, initial-scale=1" />\n    <meta\n      name="google-site-verification"\n      content="PDEQ8nFxaq-SmQ6UMeerxPE96c5-5eKz5H095dmqS3A"\n    />\n    ' + head + '\n    <script>\n      // Prevent FOUC (Flash of Unstyled Content) by setting theme before page loads\n      try {\n        const theme = localStorage.getItem("theme");\n        if (theme === "dark") {\n          document.documentElement.classList.add("dark");\n        } else {\n          // Default to light mode, remove dark class if it exists\n          document.documentElement.classList.remove("dark");\n        }\n      } catch (e) {\n        // If localStorage is not available, default to light mode\n        document.documentElement.classList.remove("dark");\n      }\n    <\/script>\n  </head>\n  <body\n    data-sveltekit-preload-data="hover"\n    class="min-h-screen bg-white dark:bg-dark-custom text-gray-900 dark:text-gray-50 transition-colors duration-300"\n  >\n    <div style="display: contents">' + body + "</div>\n  </body>\n</html>\n",
     error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -207,7 +189,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "a54778"
+  version_hash: "1cfnazc"
 };
 async function get_hooks() {
   let handle;
