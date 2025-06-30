@@ -10,7 +10,7 @@ return {
 	assets: new Set(["favicon.svg","images/logodana-dark.png","images/logodana-light.png","images/profile.webp","projects/ai-chat-assistant.md","projects/data-analytics-dashboard.md","projects/ecommerce-platform.md","projects/face-recognition-attendance.md","projects/mobile-task-manager.md","projects/object-detection-system.md"]),
 	mimeTypes: {".svg":"image/svg+xml",".png":"image/png",".webp":"image/webp",".md":"text/markdown"},
 	_: {
-		client: {start:"_app/immutable/entry/start.Bg_jKQB_.js",app:"_app/immutable/entry/app.DZJsr2aD.js",imports:["_app/immutable/entry/start.Bg_jKQB_.js","_app/immutable/chunks/bq7t3m8Z.js","_app/immutable/chunks/y1xvqwpx.js","_app/immutable/entry/app.DZJsr2aD.js","_app/immutable/chunks/y1xvqwpx.js","_app/immutable/chunks/CM9EVAoq.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.D0lDJWoN.js",app:"_app/immutable/entry/app.C5lj579s.js",imports:["_app/immutable/entry/start.D0lDJWoN.js","_app/immutable/chunks/Dvr2kLdg.js","_app/immutable/chunks/y1xvqwpx.js","_app/immutable/entry/app.C5lj579s.js","_app/immutable/chunks/y1xvqwpx.js","_app/immutable/chunks/CM9EVAoq.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),

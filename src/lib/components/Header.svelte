@@ -25,11 +25,11 @@
   <div class="max-w-3xl lg:max-w-4xl mx-auto px-6 lg:px-8">
           <div class="flex items-center justify-between h-12 lg:h-14">
       <!-- Logo -->
-      <a href="/" class="py-3 sm:py-4 lg:py-5">
+      <a href="/" class="py-2 sm:py-2 lg:py-4">
         {#if $theme === 'dark'}
-          <img src="/images/logodana-dark.png" alt="Pradana Logo" class="h-1 sm:h-2 lg:h-3 w-auto" />
+          <img src="/images/logodana-dark.png" alt="Pradana Logo" class="h-5 sm:h-6 lg:h-7 w-auto" />
         {:else}
-          <img src="/images/logodana-light.png" alt="Pradana Logo" class="h-1 sm:h-2 lg:h-3 w-auto" />
+          <img src="/images/logodana-light.png" alt="Pradana Logo" class="h-5 sm:h-6 lg:h-7 w-auto" />
         {/if}
       </a>      
 

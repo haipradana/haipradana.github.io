@@ -37,9 +37,6 @@ declare module '$env/static/private' {
 	export const CommonProgramW6432: string;
 	export const COMPUTERNAME: string;
 	export const ComSpec: string;
-	export const CONDA_BAT: string;
-	export const CONDA_EXE: string;
-	export const CONDA_SHLVL: string;
 	export const CUDA_PATH: string;
 	export const CUDA_PATH_V11_8: string;
 	export const CURSOR_TRACE_ID: string;
@@ -48,6 +45,9 @@ declare module '$env/static/private' {
 	export const DataSpell: string;
 	export const DriverData: string;
 	export const EDITOR: string;
+	export const EFC_29228: string;
+	export const FPS_BROWSER_APP_PROFILE_STRING: string;
+	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const GIT_ASKPASS: string;
 	export const GLOG_logbufsecs: string;
 	export const GOPATH: string;
@@ -85,7 +85,7 @@ declare module '$env/static/private' {
 	export const OneDriveCommercial: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
 	export const OS: string;
-	export const path: string;
+	export const Path: string;
 	export const PATHEXT: string;
 	export const PROCESSOR_ARCHITECTURE: string;
 	export const PROCESSOR_IDENTIFIER: string;
@@ -115,9 +115,6 @@ declare module '$env/static/private' {
 	export const VSCODE_GIT_IPC_HANDLE: string;
 	export const VSCODE_INJECTION: string;
 	export const windir: string;
-	export const WSLENV: string;
-	export const WT_PROFILE_ID: string;
-	export const WT_SESSION: string;
 }
 
 /**
@@ -160,9 +157,6 @@ declare module '$env/dynamic/private' {
 		CommonProgramW6432: string;
 		COMPUTERNAME: string;
 		ComSpec: string;
-		CONDA_BAT: string;
-		CONDA_EXE: string;
-		CONDA_SHLVL: string;
 		CUDA_PATH: string;
 		CUDA_PATH_V11_8: string;
 		CURSOR_TRACE_ID: string;
@@ -171,6 +165,9 @@ declare module '$env/dynamic/private' {
 		DataSpell: string;
 		DriverData: string;
 		EDITOR: string;
+		EFC_29228: string;
+		FPS_BROWSER_APP_PROFILE_STRING: string;
+		FPS_BROWSER_USER_PROFILE_STRING: string;
 		GIT_ASKPASS: string;
 		GLOG_logbufsecs: string;
 		GOPATH: string;
@@ -208,7 +205,7 @@ declare module '$env/dynamic/private' {
 		OneDriveCommercial: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
 		OS: string;
-		path: string;
+		Path: string;
 		PATHEXT: string;
 		PROCESSOR_ARCHITECTURE: string;
 		PROCESSOR_IDENTIFIER: string;
@@ -238,9 +235,6 @@ declare module '$env/dynamic/private' {
 		VSCODE_GIT_IPC_HANDLE: string;
 		VSCODE_INJECTION: string;
 		windir: string;
-		WSLENV: string;
-		WT_PROFILE_ID: string;
-		WT_SESSION: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
